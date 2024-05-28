@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="veiwport" content="width-device-width, initial-scale-1.0">
+            <title>Parks forever ranch</title>
+            <link rel="stylesheet" href="/styleSheet/parks.css">
+            <script src="/scripts/main.js"></script>
+            <script src="/scripts/locationData.js"></script>
+            <script src="/scripts/nationalParkData.js"></script>
+            <script src="/scripts/parkTypeData.js"></script>
+            <script src="/scripts/parks.js"></script>
+        </head>
+    <body>
+
+
+        <div class="banner">
+            <div class="navbar">
+                <img src="" class="logo">
+                <ul>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="parks.html">National Parks</a></li>
+                    <li><a href="mountains.html">Mountains</a></li>
+                </ul>
+            </div>
+                    <div class="Bottom-border">
+                                    <h1 class="text-color">Parks</h1>
+                                        <h2 class="text-color">Search By:</h2>
+                                        <label class="text-color">
+                                            <input type="radio" name="searchBy" id="locationRadio" checked>
+                                            Location(State)
+                                        </label>
+                                        <br>
+                                        <label class="text-color">
+                                            <input type="radio" name="searchBy" id="parkTypeRadio">
+                                            Park type
+                                        </label>
+                                        <div class="fliters">
+                                            <label class="text-color"id="locationLabel">
+                                                Location:
+                                                <select name="Locations" id="locations"></select>
+                                            </label>
+                                            <label id="parkTypeLabel" style="display:none">
+                                                Park Type:
+                                                <select name="parkTypes" id="parkTypes"></select>
+                                            </label>
+                                        </div>
+                                        <div id="results"></div>
+                                        
+            </div>
+        </div>
+    </body>
+</html>
